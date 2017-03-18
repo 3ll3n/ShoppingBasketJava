@@ -5,4 +5,7 @@ package com.codeclan.example.shoppingbasket;
  */
 
 public class Bread extends Item {
+    public Bread(String name, int price) {
+        super(name, price);
+    }
 }
