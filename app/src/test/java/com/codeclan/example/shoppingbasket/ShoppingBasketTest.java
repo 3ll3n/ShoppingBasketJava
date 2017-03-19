@@ -23,5 +23,18 @@ public class ShoppingBasketTest {
         milk = new Milk("full fat", 2);
     }
 
+    @Test
+    public void testCanAddItemToShoppingBasket() {
+        shoppingbasket.addItem(bread);
+        assertEquals(1, shoppingbasket.getNumberOfItems());
+    }
+
+    @Test
+    public void testGetNumberOfItems() {
+        shoppingbasket.addItem(bread);
+        shoppingbasket.addItem(milk);
+        assertEquals(2, shoppingbasket.getNumberOfItems());
+    }
+    
 
 }

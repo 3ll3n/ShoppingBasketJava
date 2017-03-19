@@ -5,4 +5,12 @@ package com.codeclan.example.shoppingbasket;
  */
 
 public class Customer {
+
+    private String name;
+    private ShoppingBasket shoppingbasket;
+
+    public Customer (String name) {
+        this.name = name;
+        this.shoppingbasket = shoppingbasket;
+    }
 }
