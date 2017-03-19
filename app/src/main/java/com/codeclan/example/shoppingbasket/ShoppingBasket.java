@@ -18,7 +18,21 @@ public class ShoppingBasket {
         items.add(item);
     }
 
+    public void removeItem(Item item) {
+        items.remove(item);
+    }
+
     public int getNumberOfItems() {
         return items.size();
     }
+
+    public int totalPrice() {
+       int total = 0;
+        for (Item price : items) {
+            total += price.getPrice();
+        }
+        return total;
+    }
+
+
 }
