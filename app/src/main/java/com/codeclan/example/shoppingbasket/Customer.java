@@ -13,4 +13,8 @@ public class Customer {
         this.name = name;
         this.shoppingbasket = shoppingbasket;
     }
+
+    public void chooseItem(Item item) {
+        this.shoppingbasket.addItem(item);
+    }
 }
