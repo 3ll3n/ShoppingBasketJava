@@ -39,6 +39,14 @@ public class CustomerTest {
         assertEquals(1, shoppingbasket.getNumberOfItems());
     }
 
+    @Test
+    public void testCustomerCanEmptyShoppingBasket() {
+        customer1.chooseItem(milk);
+        customer1.chooseItem(bread);
+        customer1.emptyBasket();
+        assertEquals(0, shoppingbasket.getNumberOfItems());
+    }
+
 
 
 }

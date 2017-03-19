@@ -21,4 +21,8 @@ public class Customer {
     public void returnItem(Item item) {
         this.shoppingbasket.removeItem(item);
     }
+
+    public void emptyBasket() {
+        this.shoppingbasket.emptyBasket();
+    }
 }
