@@ -17,4 +17,8 @@ public class Customer {
     public void chooseItem(Item item) {
         this.shoppingbasket.addItem(item);
     }
+
+    public void returnItem(Item item) {
+        this.shoppingbasket.removeItem(item);
+    }
 }
