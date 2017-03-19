@@ -25,4 +25,8 @@ public class Customer {
     public void emptyBasket() {
         this.shoppingbasket.emptyBasket();
     }
+
+    public void checkout() {
+        this.shoppingbasket.totalPrice();
+    }
 }

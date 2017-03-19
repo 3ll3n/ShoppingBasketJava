@@ -47,6 +47,14 @@ public class CustomerTest {
         assertEquals(0, shoppingbasket.getNumberOfItems());
     }
 
+    @Test
+    public void testCustomerCanCheckout() {
+        customer1.chooseItem(milk);
+        customer1.chooseItem(bread);
+        customer1.checkout();
+        assertEquals(9, shoppingbasket.totalPrice());
+    }
+
 
 
 }
