@@ -32,8 +32,8 @@ public class ShoppingBasket {
 
     public int totalPrice() {
        int total = 0;
-        for (Item price : items) {
-            total += price.getPrice();
+        for (Item item : items) {
+            total += item.getPrice();
         }
         return total;
     }

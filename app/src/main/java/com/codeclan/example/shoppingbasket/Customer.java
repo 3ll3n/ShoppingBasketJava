@@ -9,7 +9,7 @@ public class Customer {
     private String name;
     private ShoppingBasket shoppingbasket;
 
-    public Customer (String name) {
+    public Customer (String name, ShoppingBasket shoppingbasket) {
         this.name = name;
         this.shoppingbasket = shoppingbasket;
     }

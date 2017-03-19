@@ -13,7 +13,6 @@ public abstract class Item {
         this.price = price;
     }
 
-
     public String getName() {
         return name;
     }

@@ -38,7 +38,7 @@ public class ShoppingBasketTest {
     }
 
     @Test
-    public void testCanClearShoppingBasket() {
+    public void testCanEmptyShoppingBasket() {
         shoppingbasket.addItem(bread);
         shoppingbasket.addItem(milk);
         shoppingbasket.emptyBasket();
